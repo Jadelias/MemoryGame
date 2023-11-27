@@ -103,7 +103,7 @@ class _MemoryMatchGameState extends State<MemoryMatchGame> {
                 onPressed: () {
                   Navigator.of(context).pop();
                   widget.onGameComplete(elapsedSeconds);
-                  Navigator.pop(context); // Navigate back to the main menu
+                  Navigator.pop(context); 
                 },
                 child: Text('Main Menu'),
               ),
