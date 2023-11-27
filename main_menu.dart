@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
-import 'scoreboard_page.dart'; // Assuming you have the ScoreboardPage class in a separate file
+import 'scoreboard_page.dart';
 import 'player.dart';
 import 'memory_match_game.dart';
 
@@ -57,9 +57,6 @@ class _MainMenuPageState extends State<MainMenuPage> {
         builder: (context) => MemoryMatchGame(
           playerName: _nameController.text,
           onGameComplete: (score) {
-            // This code will be executed when the MemoryMatchGame screen is popped
-            // You can add any logic you need here, such as updating the scoreboard.
-            // For example:
             _updateScoreboard(_nameController.text, score);
           },
         ),
